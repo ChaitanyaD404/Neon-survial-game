@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Survival Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hud">
+    <div class="logo"> NEON SURVIVAL ARENA</div>
+
+    <div class="stats">
+        <span> Score: <span id="score">0</span></span>
+        <span> HP: <span id="hp">100</span></span>
+        <span> Wave: <span id="wave">1</span></span>
+    </div>
+</div>
+
+<div class="menu" id="menu">
+    <h1>NEON SURVIVAL ARENA</h1>
+    <p>Move • Shoot • Survive • Defeat Bosses</p>
+    <button id="startBtn">START GAME</button>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div class="gameover hidden" id="gameover">
+    <h2>GAME OVER</h2>
+    <p>Your Score: <span id="finalScore">0</span></p>
+    <button onclick="location.reload()">PLAY AGAIN</button>
+</div>
+
+<div class="controls">
+    <p> Move: WASD / Arrow Keys | Shoot: Space</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
